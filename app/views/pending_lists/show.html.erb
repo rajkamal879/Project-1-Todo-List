@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @pending_list %>
+
+<div>
+  <%= button_to link_to "Edit this pending list", edit_pending_list_path(@pending_list) %>
+  <%= button_to link_to "Back to pending lists", pending_lists_path %>
+
+  <%= button_to "Destroy this pending list", @pending_list, method: :delete %>
+</div>

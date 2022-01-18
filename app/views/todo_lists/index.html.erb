@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Todo lists</h1>
+
+<div id="todo_lists">
+  <% @todo_lists.each do |todo_list| %>
+    <%= render todo_list %>
+    <p>
+      <%= button_to link_to "Edit/Delete this todo list", todo_list %>
+    </p>
+  <% end %>
+</div>
+
+<%= button_to link_to "New todo list", new_todo_list_path %>
+<br>
+<%= button_to link_to "Show all Pending Lists", pending_lists_path %>

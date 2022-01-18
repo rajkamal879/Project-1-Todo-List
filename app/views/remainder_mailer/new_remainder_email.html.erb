@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>You got this mail as a remainder of the task: <%= @todo_list.title %></p>
+    <p>
+    Task details<br>
+    --------------------------
+    </p>
+    <p>Task Tile: <%= @todo_list.title %></p>
+    <p>Description of the task: <%= @todo_list.description %></p>
+    <p>Deadline: <%= @todo_list.deadline %></p>
+    <p><b>Status</b>: <%= @todo_list.done %></p>
+    <p>
+    Message:<br>
+    ----------
+    <p><%= @todo_list.description %></p>
+    </p>
+    
+  </body>
+</html>

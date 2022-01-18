@@ -1,0 +1,2 @@
+class PendingList < ApplicationRecord
+end

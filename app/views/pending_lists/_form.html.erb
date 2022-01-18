@@ -1,0 +1,17 @@
+<%= form_with(model: pending_list) do |form| %>
+  <% if pending_list.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(pending_list.errors.count, "error") %> prohibited this pending_list from being saved:</h2>
+
+      <ul>
+        <% pending_list.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
